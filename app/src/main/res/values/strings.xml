@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="common.appname">DSub</string>
+    <string name="common.appname">Bhakti Devlali</string>
     <string name="common.ok">OK</string>
     <string name="common.save">Save</string>
     <string name="common.cancel">Cancel</string>
@@ -10,7 +10,7 @@
     <string name="common.play_next">Play Next</string>
     <string name="common.play_last">Play Last</string>
 	<string name="common.download">Cache</string>
-    <string name="common.pin">Permanent Cache</string>
+    <string name="common.pin">Download</string>
     <string name="common.delete">Delete</string>
 	<string name="common.star">Star</string>
 	<string name="common.unstar">Unstar</string>
@@ -31,11 +31,11 @@
 	<string name="common.never">Never</string>
 
     <string name="button_bar.home">Home</string>
-    <string name="button_bar.browse">Library</string>
+    <string name="button_bar.browse">All CDs</string>
 	<string name="button_bar.playlists">Playlists</string>
     <string name="button_bar.now_playing">Now Playing</string>
 	<string name="button_bar.podcasts">Podcasts</string>
-	<string name="button_bar.bookmarks">Bookmarks</string>
+	<string name="button_bar.bookmarks">Popular</string>
 	<string name="button_bar.internet_radio">Internet Radio</string>
 	<string name="button_bar.shares">Shares</string>
 	<string name="button_bar.chat">Chat</string>

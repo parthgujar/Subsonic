@@ -676,7 +676,7 @@ public class SubsonicFragmentActivity extends SubsonicActivity implements Downlo
 		} else if("Download".equals(fragmentType)) {
 			return new DownloadFragment();
 		} else {
-			return new MainFragment();
+			return new SelectPlaylistFragment();
 		}
 	}
 
@@ -739,13 +739,13 @@ public class SubsonicFragmentActivity extends SubsonicActivity implements Downlo
 			editor.putBoolean(Constants.PREFERENCES_KEY_OFFLINE, false);
 
 			editor.putString(Constants.PREFERENCES_KEY_SERVER_NAME + 1, "Demo Server");
-			editor.putString(Constants.PREFERENCES_KEY_SERVER_URL + 1, "http://demo.subsonic.org");
-			editor.putString(Constants.PREFERENCES_KEY_USERNAME + 1, "guest");
+			editor.putString(Constants.PREFERENCES_KEY_SERVER_URL + 1, "http://srsmd.subsonic.org");
+			editor.putString(Constants.PREFERENCES_KEY_USERNAME + 1, "user");
 			if (Build.VERSION.SDK_INT < 23) {
-				editor.putString(Constants.PREFERENCES_KEY_PASSWORD + 1, "guest");
+				editor.putString(Constants.PREFERENCES_KEY_PASSWORD + 1, "admin");
 			} else {
 				// Attempt to encrypt password
-				String encryptedDefaultPassword = KeyStoreUtil.encrypt("guest");
+				String encryptedDefaultPassword = KeyStoreUtil.encrypt("admin");
 
 				if (encryptedDefaultPassword != null) {
 					// If encryption succeeds, store encrypted password and flag password as encrypted
@@ -753,7 +753,7 @@ public class SubsonicFragmentActivity extends SubsonicActivity implements Downlo
 					editor.putBoolean(Constants.PREFERENCES_KEY_ENCRYPTED_PASSWORD + 1, true);
 				} else {
 					// Fall back to plaintext if Keystore is having issue
-					editor = editor.putString(Constants.PREFERENCES_KEY_PASSWORD + 1, "guest");
+					editor = editor.putString(Constants.PREFERENCES_KEY_PASSWORD + 1, "admin");
 					editor.putBoolean(Constants.PREFERENCES_KEY_ENCRYPTED_PASSWORD + 1, false);
 				}
 			}

@@ -55,6 +55,7 @@
 	<group android:id="@+id/hide_star">
 		<item
 			android:id="@+id/album_menu_star"
+			android:visible="false"
 			android:title="@string/common.star"/>
 	</group>
 
@@ -67,6 +68,7 @@
 	<group android:id="@+id/hide_rating">
 		<item
 			android:id="@+id/menu_rate"
+			android:visible="false"
 			android:title="@string/menu.rate"/>
 	</group>
 </menu>

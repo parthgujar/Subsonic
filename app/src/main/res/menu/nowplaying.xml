@@ -23,32 +23,38 @@
         compat:showAsAction="ifRoom|withText"/>
 
     <item
+		android:visible="false"
         android:id="@+id/menu_save_playlist"
         android:icon="?attr/save"
         android:title="@string/download.menu_save"
         compat:showAsAction="ifRoom|withText"/>
 
 	<item
+		android:visible="false"
 		android:id="@+id/menu_equalizer"
 		android:title="@string/equalizer.label"
 		android:checkable="true"/>
 
 	<item
+		android:visible="false"
 		android:id="@+id/menu_batch_mode"
 		android:title="@string/download.batch_mode"
 		android:checkable="true"/>
 
     <item
+		android:visible="false"
         android:id="@+id/menu_screen_on_off"
         android:title="@string/download.menu_screen_on"
 		android:checkable="true"/>
 
 	<item
+		android:visible="false"
 		android:id="@+id/menu_remove_played"
 		android:title="@string/download.menu_remove_played_songs"
 		android:checkable="true"/>
 		
 	<item
+		android:visible="false"
         android:id="@+id/menu_toggle_timer"
         android:title="@string/download.start_timer"/>
 

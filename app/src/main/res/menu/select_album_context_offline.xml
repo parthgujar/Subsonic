@@ -44,6 +44,7 @@
 	<group android:id="@+id/hide_star">
 		<item
 			android:id="@+id/album_menu_star"
+			android:visible="false"
 			android:title="@string/common.star"/>
 	</group>
 </menu>
